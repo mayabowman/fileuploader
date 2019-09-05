@@ -20,13 +20,13 @@ class FilterOptions extends React.Component {
         <div className="FilterOptions__option">
           <label htmlFor="filter_synced">
             <input type="radio" value="Synced" id="filter_synced" name="filter" />
-            All
+            Synced
           </label>
         </div>
         <div className="FilterOptions__option">
           <label htmlFor="filter_new">
             <input type="radio" value="New" id="filter_new" name="filter" />
-            All
+            New
           </label>
         </div>
       </div>

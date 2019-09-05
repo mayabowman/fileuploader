@@ -1,7 +1,7 @@
 import React from 'react'
 import './ListItem.css'
-import ControlBar from '../ControlBar/ControlBar'
-import { FontAwesomeIcon } from '@fortawesome-react-fontawesome'
+// import ControlBar from '../ControlBar/ControlBar'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faFileImage,
   faFileAudio,
@@ -19,18 +19,22 @@ class ListItem extends React.Component {
     }
 
     return (
-      <div className="ListItem">
-        <div className="ListItem__icon">
-          <div className="ListItem__circle">
-            <FontAwesomeIcon icon={icons[this.props.fileType] || faFileAlt} />
+      <div>
+        <div className="ListItem">
+          <div className="ListItem__icon">
+            <div className="ListItem__circle">
+              <FontAwesomeIcon icon={icons[this.props.fileType] || faFileAlt} />
+            </div>
           </div>
         </div>
-      </div>
-      <div>
         <div>
-          
+          <div>
+            
+          </div>
         </div>
       </div>
     )
   }
 }
+
+export default ListItem;
