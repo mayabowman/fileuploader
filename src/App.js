@@ -31,7 +31,7 @@ class App extends React.Component {
         <SearchBar
           searchTerm={this.state.searchTerm}
           filterOption={this.state.filterOption}
-          handlUpdate={ term=>this.updateSearchTerm(term) }
+          handleUpdate={ term=>this.updateSearchTerm(term) }
           handleFilterChange={ option => this.updateFilterOption(option)}
         />
         <FilterableList 

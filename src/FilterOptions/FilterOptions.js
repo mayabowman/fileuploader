@@ -3,6 +3,7 @@ import './FilterOptions.css'
 
 class FilterOptions extends React.Component {
   render() {
+    const { filterOption } = this.props;
     return (
       <div className="FilterOptions">
         <div className="FilterOptions__option">
