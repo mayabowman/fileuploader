@@ -10,6 +10,6 @@ const FILES = [
   {"fileType":"mp3","size":"3.4MB","name":"disturbed_sound_of_silence.mp3","status":"New"},
 ];
 
-ReactDOM.render(<App files={FILES} x={1}/>, document.getElementById('root'));
+ReactDOM.render(<App files={FILES} />, document.getElementById('root'));
 
 

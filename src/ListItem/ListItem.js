@@ -1,6 +1,6 @@
 import React from 'react'
 import './ListItem.css'
-// import ControlBar from '../ControlBar/ControlBar'
+import ControlBar from '../ControlBar/ControlBar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faFileImage,
@@ -27,13 +27,20 @@ class ListItem extends React.Component {
             </div>
           </div>
         </div>
-        <div>
-          <div>
-            
+        <div className="ListItem__content">
+          <div className="ListItem__heading">
+            <div className="ListItem__title">{this.props.name}</div>
+            <div className="ListItem__size">{this.props.title}</div>
+          </div>
+        <div className="ListItem__actions">
+          <div className="ListItem__status">
+            {this.props.status}
+          </div>
+          <ControlBar />
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
